@@ -1,0 +1,35 @@
+div {
+    text-align: center;
+  }
+  
+  .App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  .App .movie-search-input {
+    display: inline-block;
+    position: relative;
+  }
+  .App .movie-search-input .dropdown-list {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 30px;
+    width: 100%;
+  }
+  .App .movie-search-input:focus-within .dropdown-list {
+    display: block;
+  }
+  .App .movie-search-input .dropdown-list .item {
+    border-bottom: 1px solid #cccccc;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .App .movie-search-input .dropdown-list .item:hover {
+    background-color: #eeeeee;
+  }
+  .App .movie-search-input .dropdown-list .item:last-child {
+    border-bottom: none;
+  }
+  
